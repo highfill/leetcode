@@ -20,11 +20,13 @@ class Solution
             
             if (itr == closedSet.end())
             {
-                // Found the previously seen integer that adds with the current to equal the target integer
+                // Could not find another value from the "closed set" that adds together with this current number to equal "target". Add this number to "closedSet":
                 closedSet[current] = i;
             }
             else
             {
+                // Found the previously seen integer that adds with the current to equal the target integer:
+
                 toReturn[0] = itr->second;
                 toReturn[1] = i;
                 
