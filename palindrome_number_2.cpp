@@ -10,20 +10,20 @@ class Solution
     {   
         if (x < 0 || x != 0 && x % 10 == 0)
             return false;
-        
-        int reversed = 0;
-        while (x > reversed)
+
+        long int forward = x;
+        long int reversed = 0;
+        while (x > 0)
         {
-            reversed = 10 * reversed + x % 10;
-            x /= 10;
+            reversed = 10 * reversed + forward % 10;
+            forward /= 10;
         }
         
-        if (x == reversed || x == reversed / 10)
+        if ((long int)x == reversed || (long int)x == reversed / 10)
         {
             return true;
         }
         
         return false;
-            
     }
 };
