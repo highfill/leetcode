@@ -2,8 +2,7 @@ class Solution
 {
 
     public:
-    
-    
+
     // Iterate through each element of the vector. Store previously seen values in a hashmap that maps values to
     // their index. For each new int "current" in the vector, if (target - current) is contained in the map
     // of previously seen integers, then we have found the pair that adds to target. Otherwise, add the current
