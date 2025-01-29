@@ -19,7 +19,7 @@ class Solution
             forward /= 10;
         }
         
-        if ((long int)x == reversed || (long int)x == reversed / 10)
+        if ((long int)x == reversed)
         {
             return true;
         }
