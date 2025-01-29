@@ -11,7 +11,7 @@ class Solution
         {
             return false;
         }
-        else if (x == 0)
+        else if (x < 10)
         {
             return true;
         }
